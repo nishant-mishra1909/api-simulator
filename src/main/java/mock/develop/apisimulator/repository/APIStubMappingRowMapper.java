@@ -10,7 +10,7 @@ public class APIStubMappingRowMapper implements RowMapper<APIStubMapping> {
 
     @Override
     public APIStubMapping mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return new APIStubMapping(rs.getInt("id"),
+        return new APIStubMapping(rs.getLong("id"),
                 rs.getString("request_url"),
                 rs.getString("request_method"),
                 rs.getString("request_body"),

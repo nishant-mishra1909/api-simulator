@@ -1,16 +1,22 @@
+/*
 package mock.develop.apisimulator.repository;
 
 import mock.develop.apisimulator.model.APIStubMapping;
+import mock.develop.apisimulator.util.SimulatorDBConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.logging.Logger;
 
 @Repository
 public class JdbcWireMockMappingRepository implements WireMockMappingRepository {
 
+    private final Logger log = Logger.getLogger("JdbcWireMockMappingRepository");
     private final JdbcTemplate jdbcTemplate;
+
 
     @Autowired
     public JdbcWireMockMappingRepository(JdbcTemplate jdbcTemplate) {
@@ -19,23 +25,48 @@ public class JdbcWireMockMappingRepository implements WireMockMappingRepository 
 
 
     @Override
-    public void save(APIStubMapping mapping) {
-        jdbcTemplate.update(
-                "INSERT INTO wiremock_mapping (request_method, request_url, request_body, response_body, request_type) VALUES (?, ?, ?, ?, ?)",
+    public Object save(APIStubMapping mapping) {
+        log.info("Saving New API Simulation with these details : " + mapping);
+
+        jdbcTemplate.update(SimulatorDBConstants.insertQuery,
                 mapping.getRequestMethod(),
                 mapping.getRequestUrl(),
                 mapping.getRequestBody(),
                 mapping.getResponseBody(),
                 mapping.getApiType()
         );
+        return null;
     }
 
     @Override
     public List<APIStubMapping> findAll() {
-        String findAllQuery = "SELECT id, request_method, request_url, request_body, request_type, response_body FROM wiremock_mapping";
-        return jdbcTemplate.query(findAllQuery, new APIStubMappingRowMapper());
+        return jdbcTemplate.query(SimulatorDBConstants.findAllQuery, new APIStubMappingRowMapper());
+    }
+
+    @Override
+    public Optional<APIStubMapping> findById(Long id) {
+
+        return jdbcTemplate.query(SimulatorDBConstants.findSimulationByIdQuery, new Object[]{id}, rs -> {
+            if (rs.next()) {
+                APIStubMapping mapping = new APIStubMapping(rs.getInt("id"),
+                        rs.getString("request_url"),
+                        rs.getString("request_method"),
+                        rs.getString("request_body"),
+                        rs.getString("response_body"),
+                        rs.getString("request_type"));
+                return Optional.of(mapping);
+            } else {
+                return Optional.empty();
+            }
+        });
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        jdbcTemplate.update(SimulatorDBConstants.deleteAPISimulationQuery, id);
     }
 
 }
 
 
+*/

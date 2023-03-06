@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mappings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Configured Simulations</title>
+</head>
+<body>
+<section class="hero is-info">
+    <div class="hero-body">
+        <p class="title">
+            List Of Available Mappings
+        </p>
+    </div>
+</section>
+<section class="section">
+    <div class="table-container">
+        <table class="table is-striped is-fullwidth is-hoverable">
+            <div class="content">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>API Endpoint</th>
+                    <th>API Type</th>
+                    <th>HTTP Method</th>
+                    <th>Request Body</th>
+                    <th>Response Body</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+            </div>
+            <div class="content">
+                <tbody>
+                <tr th:each="mapping : ${mappings}">
+                    <td th:text="${mapping.id}"></td>
+                    <td th:text="${mapping.requestUrl}"></td>
+                    <td th:text="${mapping.apiType}"></td>
+                    <td th:text="${mapping.requestMethod}"></td>
+                    <td th:text="${mapping.requestBody}"></td>
+                    <td th:text="${mapping.responseBody}"></td>
+                    <td>
+                        <a class="button is-warning is-small"
+                           th:href="@{/mappings/{id}/edit(id=${mapping.id})}">Edit</a>
+                        <form th:action="@{/mappings/{id}/delete(id=${mapping.id})}" method="post">
+                            <input class="button is-danger is-small" type="submit" value="Delete"/>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </div>
+        </table>
+    </div>
+</section>
+</body>
+<section class="section">
+
+<footer class="footer">
+
+    <div class="content has-text-centered">
+        <a class="button is-success is-small" th:href="@{/mappings/add}">Add a new Mapping</a><br/><br/>
+        <a>
+            <strong>Powered</strong> by <strong>Self Learning!!</strong>
+        </a>
+    </div>
+</footer>
+</section>
+</html>

@@ -1,0 +1,370 @@
+{
+  "mappings" : [ {
+    "id" : "b8bd8b15-6a13-4d29-960a-cb6b64b9cd39",
+    "request" : {
+      "url" : "/api/v2/email/list/Adrian",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Earl27@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "b8bd8b15-6a13-4d29-960a-cb6b64b9cd39"
+  }, {
+    "id" : "84816b77-c08f-4ebd-96e1-5463e2cf1ce8",
+    "request" : {
+      "url" : "/api/v2/email/list/Lew",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Martina95@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "84816b77-c08f-4ebd-96e1-5463e2cf1ce8"
+  }, {
+    "id" : "904e72bf-d350-454e-bf5b-29054168da4a",
+    "request" : {
+      "url" : "/api/v2/email/list/Joey",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Hilda_Douglas1@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "904e72bf-d350-454e-bf5b-29054168da4a"
+  }, {
+    "id" : "f723456f-072d-4e45-b19e-e73ce8f1d5df",
+    "request" : {
+      "url" : "/api/v2/email/list/Lonie",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Dana_Reichel76@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "f723456f-072d-4e45-b19e-e73ce8f1d5df"
+  }, {
+    "id" : "55c5d2d4-cf23-4e0c-a726-975fb6f40664",
+    "request" : {
+      "url" : "/api/v2/email/list/Raphaelle",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Kylie_Mayert89@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "55c5d2d4-cf23-4e0c-a726-975fb6f40664"
+  }, {
+    "id" : "c447ed0f-bcbd-4930-a5fd-8d53e0cb027e",
+    "request" : {
+      "url" : "/api/v2/email/list/Luciano",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Keshawn.McDermott33@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "c447ed0f-bcbd-4930-a5fd-8d53e0cb027e"
+  }, {
+    "id" : "1793952e-c96a-4182-bd0c-e4f8c4ce6990",
+    "request" : {
+      "url" : "/api/v2/email/list/Athena",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Xavier_Pfannerstill16@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "1793952e-c96a-4182-bd0c-e4f8c4ce6990"
+  }, {
+    "id" : "a550f1de-bc44-4f2d-a9b2-45edcb610319",
+    "request" : {
+      "url" : "/api/v2/email/list/Dakota",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Ahmed_Muller@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "a550f1de-bc44-4f2d-a9b2-45edcb610319"
+  }, {
+    "id" : "f7adb8c8-0962-4384-aa58-78bcc9ef2090",
+    "request" : {
+      "url" : "/api/v2/email/list/Major",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Ellis.Krajcik52@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "f7adb8c8-0962-4384-aa58-78bcc9ef2090"
+  }, {
+    "id" : "6f819eaf-7426-467b-a2dd-2cce9844bea1",
+    "request" : {
+      "url" : "/api/v2/email/list/Irma",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Joelle8@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "6f819eaf-7426-467b-a2dd-2cce9844bea1"
+  }, {
+    "id" : "c73b9f14-4a21-49ce-8555-ec740ace0809",
+    "request" : {
+      "url" : "/api/v2/email/list/Stefan",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Edgar92@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "c73b9f14-4a21-49ce-8555-ec740ace0809"
+  }, {
+    "id" : "a751ea0b-098b-4671-957d-6b61fee2bc4c",
+    "request" : {
+      "url" : "/api/v2/email/list/Aracely",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Eve.Schultz@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "a751ea0b-098b-4671-957d-6b61fee2bc4c"
+  }, {
+    "id" : "37b26ab5-61be-4c92-b9fa-9da9abc48d67",
+    "request" : {
+      "url" : "/api/v2/email/list/Rachael",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Darien_Borer50@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "37b26ab5-61be-4c92-b9fa-9da9abc48d67"
+  }, {
+    "id" : "a0461250-c1b4-4e5d-9587-ae5676ab703f",
+    "request" : {
+      "url" : "/api/v2/email/list/Sadie",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Cristina11@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "a0461250-c1b4-4e5d-9587-ae5676ab703f"
+  }, {
+    "id" : "af5d4978-adb3-4319-94c8-d6a8df4330d6",
+    "request" : {
+      "url" : "/api/v2/email/list/Arturo",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Dedrick_Wiza@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "af5d4978-adb3-4319-94c8-d6a8df4330d6"
+  }, {
+    "id" : "c1afc00f-ebed-471f-9cf5-6b3058add809",
+    "request" : {
+      "url" : "/api/v2/email/list/Alisa",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Virginia.Goodwin42@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "c1afc00f-ebed-471f-9cf5-6b3058add809"
+  }, {
+    "id" : "4f390350-0c25-48cb-82af-b0a75b30bb6d",
+    "request" : {
+      "url" : "/api/v2/email/list/Jamison",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Fritz.Raynor@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "4f390350-0c25-48cb-82af-b0a75b30bb6d"
+  }, {
+    "id" : "811a707c-2c35-443c-be1c-885d0b886aef",
+    "request" : {
+      "url" : "/api/v2/email/list/Jedediah",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Quinn_Hirthe93@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "811a707c-2c35-443c-be1c-885d0b886aef"
+  }, {
+    "id" : "3a14500a-146a-45ad-bb34-154fbd47ed3f",
+    "request" : {
+      "url" : "/api/v2/email/list/Antonetta",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Domenico_Skiles48@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "3a14500a-146a-45ad-bb34-154fbd47ed3f"
+  }, {
+    "id" : "a64345ec-bd80-4864-a5ba-e4107778e057",
+    "request" : {
+      "url" : "/api/v2/email/list/Patrick",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Vicente_Funk99@hotmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "a64345ec-bd80-4864-a5ba-e4107778e057"
+  }, {
+    "id" : "272cbbc8-c47d-4cc7-9f91-df947c94d2c5",
+    "request" : {
+      "url" : "/api/v2/email/list/Cordell",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Laney.Krajcik@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "272cbbc8-c47d-4cc7-9f91-df947c94d2c5"
+  }, {
+    "id" : "6ffdaea0-986d-4bee-8273-dee7a12da090",
+    "request" : {
+      "url" : "/api/v2/email/list/Serenity",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Chase_Stanton@gmail.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "6ffdaea0-986d-4bee-8273-dee7a12da090"
+  }, {
+    "id" : "cc2e4684-2c81-42a1-a3b6-dc5f765b7e04",
+    "request" : {
+      "url" : "/api/v2/email/list/Triston",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "Elizabeth.Funk@yahoo.com",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "cc2e4684-2c81-42a1-a3b6-dc5f765b7e04"
+  }, {
+    "id" : "b263b81f-f1b9-4076-9064-da3db12247da",
+    "request" : {
+      "url" : "api/v2/test/simulator/test/new",
+      "method" : "POST"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "{\r\n    \"name\": \"Java Book\",\r\n    \"author\": \"O’Reilly\",\r\n    \"pages\": 800,\r\n    \"collection\": \"JAVA\",\r\n    \"innerObject\": {\r\n        \"innerField\": \"Hello\",\r\n        \"andCheck\": 5\r\n    },\r\n    \"users\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Nishant\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivani\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivanishant\"\r\n        }\r\n    ]\r\n}",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "b263b81f-f1b9-4076-9064-da3db12247da"
+  }, {
+    "id" : "036931c7-47cf-491a-be68-09c20ff5ac85",
+    "request" : {
+      "url" : "api/v1/test/simulator/add",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "{\r\n    \"name\": \"Java Book\",\r\n    \"author\": \"O’Reilly\",\r\n    \"pages\": 800,\r\n    \"collection\": \"JAVA\",\r\n    \"innerObject\": {\r\n        \"innerField\": \"Hello\",\r\n        \"andCheck\": 5\r\n    },\r\n    \"users\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Nishant\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivani\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivanishant\"\r\n        }\r\n    ]\r\n}",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "036931c7-47cf-491a-be68-09c20ff5ac85"
+  }, {
+    "id" : "32c58764-22ff-45f1-8a0b-e2678432ac3d",
+    "request" : {
+      "url" : "api/v1/test/simulator/add",
+      "method" : "PUT"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "{\r\n    \"name\": \"Java Book\",\r\n    \"author\": \"O’Reilly\",\r\n    \"pages\": 800,\r\n    \"collection\": \"JAVA\",\r\n    \"innerObject\": {\r\n        \"innerField\": \"Hello\",\r\n        \"andCheck\": 5\r\n    },\r\n    \"users\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Nishant\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivani\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Shivanishant\"\r\n        }\r\n    ]\r\n}",
+      "headers" : {
+        "myHeader" : "simulateItUP!!"
+      }
+    },
+    "uuid" : "32c58764-22ff-45f1-8a0b-e2678432ac3d"
+  } ],
+  "meta" : {
+    "total" : 26
+  }
+}

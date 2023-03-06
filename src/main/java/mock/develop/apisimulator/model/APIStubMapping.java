@@ -1,70 +1,28 @@
 package mock.develop.apisimulator.model;
 
+import lombok.*;
 
+import javax.persistence.*;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Entity
+@Table(name = "wiremock_mapping")
 public class APIStubMapping {
-    int id;
+    @Id
+    @GeneratedValue
+    Long id;
+    @Column(name = "request_url")
     String requestUrl;
+    @Column(name = "request_method")
     String requestMethod;
+    @Column(name = "request_body", length = 1000000000)
     String requestBody;
+    @Column(name = "response_body", length = 1000000000)
     String responseBody;
+    @Column(name = "request_type")
     String apiType;
-
-    public APIStubMapping(int id, String requestUrl, String requestMethod, String requestBody, String responseBody, String apiType) {
-        this.id = id;
-        this.requestUrl = requestUrl;
-        this.requestMethod = requestMethod;
-        this.requestBody = requestBody;
-        this.responseBody = responseBody;
-        this.apiType = apiType;
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getRequestUrl() {
-        return requestUrl;
-    }
-
-    public void setRequestUrl(String requestUrl) {
-        this.requestUrl = requestUrl;
-    }
-
-    public String getRequestMethod() {
-        return requestMethod;
-    }
-
-    public void setRequestMethod(String requestMethod) {
-        this.requestMethod = requestMethod;
-    }
-
-    public String getRequestBody() {
-        return requestBody;
-    }
-
-    public void setRequestBody(String requestBody) {
-        this.requestBody = requestBody;
-    }
-
-    public String getResponseBody() {
-        return responseBody;
-    }
-
-    public void setResponseBody(String responseBody) {
-        this.responseBody = responseBody;
-    }
-
-    public String getApiType() {
-        return apiType;
-    }
-
-    public void setApiType(String apiType) {
-        this.apiType = apiType;
-    }
 }
 

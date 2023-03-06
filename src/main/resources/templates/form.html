@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title th:if="${mapping.id}">Edit Simulation</title>
+    <title th:unless="${mapping.id}">Add New Simulation</title>
+</head>
+<body>
+<section class="hero is-link">
+    <div class="hero-body">
+        <p class="title" th:if="${mapping.id}">
+            Edit Mapping
+        </p>
+        <p class="title" th:unless="${mapping.id}">
+            Add New Mapping
+        </p>
+
+    </div>
+</section>
+<div class="card-content">
+    <!--<h1 th:if="${mapping.id}">Edit Mapping</h1>
+    <h1 th:unless="${mapping.id}">New Mapping</h1>-->
+    <form th:action="@{/mappings}" th:object="${mapping}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">API Endpoint</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-danger" type="text" placeholder="e.g. /api/v2/to/be/simulated"
+                               th:field="*{requestUrl}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">HTTP Method</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+
+                        <div class="select is-rounded">
+                            <select name="requestMethod">
+                                <option value="POST">POST</option>
+                                <option value="GET">GET</option>
+                                <option value="PUT">PUT</option>
+                                <option th:each="requestMethod : ${requestMethod}" th:value="${requestMethod}" th:text="${requestMethod}"></option>
+                            </select>
+                        </div><!--
+                        <input class="input is-danger" type="text" placeholder="e.g. POST,GET,PUT,"
+                               >-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">API Type</label>
+            </div>
+            <div class="field-body">
+                <input type="radio" id="option1" name="apiType" value="SOAP" checked>
+                <label for="option1">SOAP</label>
+
+                <input type="radio" id="option2" name="apiType" value="REST">
+                <label for="option2">REST</label>
+                <div class="field">
+                    <div class="control">
+                        <div th:each="option : ${apiType}">
+                            <input type="radio" th:id="${option}" th:name="apiType" th:value="${option}" th:checked="${option == ${apiType}}">
+                            <label th:for="${option}" th:text="${option}"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Request Body</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-info" th:field="*{requestBody}" placeholder="XML/JSON Request Payload"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Response Body</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control"><!--
+                        <input class="input is-danger" type="text" placeholder="e.g. XML/JSON Response Payload"
+                               th:field="*{responseBody}">-->
+                        <textarea class="textarea is-info" th:field="*{responseBody}" placeholder="XML/JSON Response Payload"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label">
+                <!-- Left empty for spacing -->
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

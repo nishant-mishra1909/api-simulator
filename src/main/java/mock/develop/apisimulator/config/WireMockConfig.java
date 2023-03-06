@@ -1,20 +1,14 @@
 package mock.develop.apisimulator.config;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
-import com.github.tomakehurst.wiremock.client.MappingBuilder;
 import com.github.tomakehurst.wiremock.common.ConsoleNotifier;
 import com.github.tomakehurst.wiremock.common.SingleRootFileSource;
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 import com.github.tomakehurst.wiremock.standalone.JsonFileMappingsSource;
-import mock.develop.apisimulator.repository.JdbcWireMockMappingRepository;
-import mock.develop.apisimulator.repository.WireMockMappingRepository;
-import mock.develop.apisimulator.service.WireMockMappingService;
-import mock.develop.apisimulator.transformers.BasicResponseTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
@@ -37,6 +31,7 @@ public class WireMockConfig {
                 .notifier(new ConsoleNotifier(true))
                 .port(wireMockPort));
         wireMockServer.loadMappingsUsing(new JsonFileMappingsSource(new SingleRootFileSource(mappingsPath)));
+        wireMockServer.start();
         return wireMockServer;
     }
 

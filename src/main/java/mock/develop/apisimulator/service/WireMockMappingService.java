@@ -21,8 +21,6 @@ public class WireMockMappingService {
     private final WireMockMappingRepository mappingRepository;
     private final WireMockServer wireMockServer;
 
-    private static List<APIStubMapping> mappingList;
-
     @Autowired
     public WireMockMappingService(WireMockMappingRepository mappingRepository, WireMockServer wireMockServer) {
         this.mappingRepository = mappingRepository;
@@ -32,7 +30,8 @@ public class WireMockMappingService {
 
     public void saveMapping(APIStubMapping mapping) {
         mappingRepository.save(mapping);
-        wireMockServer.stubFor(SimulatorUtil.getStubMapping(mapping));
+        resetMappings();
+
     }
 
     public List<APIStubMapping> getAllMappings() {
@@ -42,15 +41,21 @@ public class WireMockMappingService {
 
     @PostConstruct
     public void initializeMappings() {
-
-        wireMockServer.start();
         List<APIStubMapping> mappings = mappingRepository.findAll();
         mappings.forEach(mapping -> wireMockServer.stubFor(SimulatorUtil.getStubMapping(mapping)));
     }
 
     public void resetMappings() {
+
         wireMockServer.resetMappings();
         initializeMappings();
     }
 
+    public APIStubMapping getMappingById(Long id) {
+        return mappingRepository.findById(id).orElse(null);
+    }
+
+    public void deleteMappingById(Long id) {
+        mappingRepository.deleteById(id);
+    }
 }
